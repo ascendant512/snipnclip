@@ -1,0 +1,32 @@
+input: "/input file.mkv"
+settings:
+ container: webm
+ subtitles: no
+ low resolution limit: 640
+ working directory: /this/directory/gets/deleted!
+ target directory: "/the/output/file/gets/put/here"
+ resume: no
+ webm:
+  target size: 4MiB
+  # must be between 0 and 51
+  # should be between 17 and 28, lower is higher quality
+  crf: 17
+ mp4:
+  target size: 10MiB
+  # must be between 0 and 63
+  # should be between 15 and 35, lower is higher quality
+  crf: 20
+  audio resync: 0.125
+  codec: libx264 #libx264 or libaom-av1
+snips:
+# - start: "10:36.052"
+#   end: "11:00.326"
+#   name: mayo
+#   crop:
+#    x: 0
+#    y: 138
+#    width: 1920
+#    height: 804
+- name: destiny
+  start: "16:21.940"
+  end: "16:28.488"
