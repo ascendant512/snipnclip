@@ -1,3 +1,4 @@
 datasize
 ffmpeg-python
+scipy
 scikit-learn
