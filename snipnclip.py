@@ -11,8 +11,8 @@ import numpy as np
 from yaml import safe_load
 from ffmpeg import input as make_stream, probe, output
 from ffmpeg._run import Error as FFMpegError
-# from scipy.stats import linregress
-# from scipy.optimize import curve_fit
+from scipy.stats import linregress
+from scipy.optimize import curve_fit
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import Matern
 from datasize import DataSize
